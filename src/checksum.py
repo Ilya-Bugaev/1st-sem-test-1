@@ -16,3 +16,13 @@ def modulo11_checksum(is_bn_number: str):
 
     checksum = total % 11
     return checksum == check_digit
+
+
+while True:
+    isbn = input("ISBN: ").strip()
+    if isbn == "-1":
+        break
+    if check_isbn(isbn):
+        print("correct")
+    else:
+        print("incorrect")
