@@ -1,4 +1,4 @@
-from src.checksum import modulo11Checksum
+from src.checksum import modulo11_checksum
 
 
 def test_good():

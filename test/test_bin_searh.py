@@ -1,4 +1,4 @@
-from src.bin_search import binSearch
+from src.bin_search import bin_search
 
 
 def test_middle():
