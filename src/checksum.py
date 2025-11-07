@@ -10,9 +10,9 @@ def modulo11_checksum(is_bn_number: str):
 
     total = 0
     for i in range(len(digits) - 1):
-        weight = 10
+        weight = 10 - i
         digit = digits[i]
         total += digit * weight
 
-    checksum = total + check_digit
-    return checksum % 11 == 0
+    checksum = total % 11
+    return checksum == check_digit
