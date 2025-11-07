@@ -1,5 +1,9 @@
 def modulo11_checksum(is_bn_number: str):
 
+    if not isbn_number or not isinstance(isbn_number, str):
+        raise ValueError("Invalid input: must be non-empty string")
+    
+
     digits = [int(char) for char in is_bn_number if char.isdigit()]
 
     check_digit = digits[-1]
